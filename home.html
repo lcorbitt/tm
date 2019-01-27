@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Teddie's Medicinals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" xcontent="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      @import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+      @import url('https://fonts.googleapis.com/css?family=Lato|Oswald:300,400');
+      
+$headings-font-family:Oswald;
+$enable-grid-classes:false;
+$primary: #CC7032;
+$secondary: #CC7032;
+$success: #CC7032;
+$danger: #CC7032;
+$info: #CC7032;
+$warning: #CC7032;
+$light: #CC7032;
+$dark: #CC7032;
+$enable-gradients:true;
+$spacer:1rem;
+$border-width:0;
+$btn-border-radius:.25rem;
+$enable-shadows:false;
+@import "bootstrap";
+  body {
+      font-family: 15px Lato, sans-serif !important;
+      line-height: 1.8;
+      color: #F7D0A4;
+  }
+h1 {
+      font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;
+}
+h2 {
+      font-family: Oswald, sans-serif;
+      letter-spacing: 1px;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #2C1710;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+h4 {
+      font-family: Lato;
+      font-size: 19px;
+      line-height: 1.5;
+      color: #2C1710;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+ 
+p {
+    font-family: Lato;
+        
+      }
+      .btn {
+        font-family: Oswald;
+        font-color: #F7D0A4 !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+  .btn-default {
+    color: #F7D0A4;
+    background-color: #2C1710;
+      }
+      
+.btn-default:hover {
+    color: #2C1710;
+    background-color: #F7D0A4;
+    border-color: #2C1710;
+}
+ 
+ .btn-lg {
+      background-color: #2C1710 !important;
+      font-color: #2C1710 !important;
+      border-color: #2C1710 !important;
+      margin-top: 60px;
+      }
+ .btn-lg:hover {
+      background-color: #F7D0A4 !important;
+      font-color: #2C1710 !important;
+      }
+
+.jumbotron {
+      background-color: #F8F8F8;
+      color: 2C1710;
+      padding: 100px 25px;
+      font-family: copperlate, sans-serif;
+  }
+.container-fluid {
+      padding: 60px 50px;
+      background-color: #FFFFFF;
+  }
+.bg-grey {
+      background-color: #F8F8F8;
+  }
+.logo-small {
+      color: #3E7842;
+      font-size: 50px;
+  }
+.logo {
+      color: #68968A;
+      font-size: 200px;
+  }
+.thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+ .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+ 
+
+ .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+ .item span {
+      font-style: normal;
+  }
+ .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+ .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+ .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+ .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+ .panel-footer {
+      background-color: white !important;
+  }
+ .panel-footer h3 {
+      font-size: 32px;
+  }
+ .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+ .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+      
+.navbar {
+      height: 75px;
+      margin-bottom: 0;
+      background-color: #2C1710;
+      z-index: 9999;
+      border: 0;
+      font-size: 15px !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      line-height: 5 !important;
+
+  }
+      
+ .navbar li a, .navbar .navbar-brand {
+      color: #F7D0A4 !important;
+      font-family: Oswald;
+      font-size: 18px;
+      letter-spacing: 4px;
+      margin-right: 20px;
+      }
+      
+ .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #2C1710 !important;
+        background-color: #F7D0A4 !important;
+        
+      }
+      
+ .navbar .navbar-brand {
+      color: #ffffff;
+    padding-top: 14px;
+  }
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #F7D0A4;
+}
+
+.navbar li a {
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      padding-bottom: 15px;
+      }
+
+ .navbar-collapse {
+        border-top: 0px solid;
+        background-color: #2C1710;
+      }
+.navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #F7D0A4 !important;
+  }
+
+
+footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #2C1710;
+  }
+ .slideanim {visibility:hidden;}
+ .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  
+ .carousel-caption {
+   font-size: 20px;
+    right: 10%;
+    left: auto;
+    bottom: -20px;
+    top: 0;
+    bottom: auto;
+}
+    
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+      position: fixed-top;
+      
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+        color: F7D0A4;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+      
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <a class="navbar-brand" href="home.html">
+    <img src="https://cdn1.imggmi.com/uploads/2019/1/15/b63d321ddade774a59b9787fe2342d70-full.png" height="36" width="170"/></a>
+  </a>
+  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+  
+
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="store.html">SHOP</a></li>
+        <li><a href="#learn">LEARN</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <img src="https://cdn1.imggmi.com/uploads/2019/1/15/72cfa76c9e0a9ae58462ac8406df9c86-full.png" height="425" width="400" alt="TM Bear">
+</> 
+  <p>Engineered by nature. Responsibly sourced.</p> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Us</h2><br>
+      <h4>Teddie’s Medicinals was started by Teddie and her son Andrew. Andrew began his journey with growing, learning about the cannabis plant and working in the industry in Colorado in 2013 and has continuously researched, studied and connected with hemp experts in Colorado and all around the United States since then. After finding much success with Full-Spectrum CBD products, they began to educate others who were interested in trying hemp products themselves. After having trouble finding quality hemp products for friends, family and acquaintances, Teddie and Andrew decided it was time to provide the best quality Full-Spectrum CBD products to those who needed it at a fair price. 
+</h4><br>
+    
+   <a href="#contact"<button class="btn btn-default btn-lg">Get in Touch</button></a>
+    </div>
+
+</div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+             
+                                             
+     <div class="col-sm-8">
+      <h2>Our Mission</h2><br>
+      <h4> We have partnered with the best hemp farms in the world to bring you the top of the line products. We strive to bring you the best customer service, products and education on this rapidly growing industry. Teddie and Andrew encourage you to ask any questions that you may have. We will provide you with premium hemp products to meet all your needs. Our products are more than just CBD. This is a lifestyle. All of our products are made with love in Boulder, Colorado. </h4><br>
+      <p> *Our hemp products are grown locally and organically in Colorado in accordance with section 7606 of the 2014 US Farm Bill and can be shipped nationwide. 
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Featured Products Section) -->
+<div id="shop" class="container-fluid text-center">
+  <h2>FIND THE RIGHT CBD PRODUCTS FOR YOU</h2>
+  <br>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <a href="store.html" target="?"><img src="http://i65.tinypic.com/2u88mq0.png" border="0" alt="Full Spectrum Hemp Oil (500mg)" width="200" height="200"></a>
+      <h4>Full Spectrum Hemp Oil</h4>
+      <p>Product description...</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="store.html" target="?"><img src="http://i66.tinypic.com/n3tcf4.png" border="0" alt="Bath Bomb (100mg)" width="200" height="200"></a>
+      <h4>Utopia Bath Bomb</h4>
+      <p>Product description...</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="store.html" target="_blank"><img src="http://i67.tinypic.com/72pykm.png" border="0" alt="Hemp Coffee (360mg)" width="200" height="200"></a>
+      <h4>Hemp Coffee</h4>
+      <p>Product description...</p>
+    </div>
+  </div>
+ <div class="container text-center"                     
+ <div class="row">
+    <div class="col-sm-12">
+    <a href="store.html"<button class="btn btn-default btn-lg">SHOP NOW</button></a>                                                  
+    </div>
+ </div>
+                                                         </div>
+
+  
+
+<!-- Container (Learn Section) -->
+<div id="learn" class="container-fluid text-center bg-grey">
+  <h2>What is Full Spectrum CBD?</h2><br>
+  <h4>Hemp comes from the same family as marijuana but is very different at the same time. Hemp flower and hemp products contain less than .3% THC, the cannabinoid that gets you high or stoned. This means that Hemp is non-psychoactive. CBD, also known as cannibidiol, is one of many cannabinoids found in the hemp plant. Research on CBD and other non-psychoactive cannabinoids have became very popular in the last few years. The benefits of hemp Full-Spectrum CBD products is astounding and can help with many problems that humans and animals face today.
+<br>
+<br>
+Full-Spectrum CBD products are more than just CBD and that’s why we bring it into all of our products at Teddie’s Medicinals. Other cannabinoids found in our products are CBG, CBN, CBC, CBG-A and many more. The reason we choose to provide only Full-Spectrum CBD products is so you get the most out of your product. The more cannabinoids that are working together, the better. They all work with each other and benefit each other to give you the best results. We only use locally grown organic hemp that’s tested by third parties to ensure you’re getting the very best product in the world. Our team works hard to create our products and continues to do research to better the hemp community.</h4>
+</br>
+</div>
+  
+ 
+</br>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid text-center">
+  <h2 class="text-center">GET IN TOUCH</h2>
+  </br>
+  <div class="row">
+    <div class="col-sm-5">
+      <h4>Contact us and we'll get back to you within 24 hours.</h4>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Boulder, CO</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 720-955-6569</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> teddiesmedicinals@gmail.com</p>
+    </div>
+    <br>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Developed by LC Design Solutions</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
