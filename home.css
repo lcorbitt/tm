@@ -1,4 +1,23 @@
-body {
+   @import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+      @import url('https://fonts.googleapis.com/css?family=Lato|Oswald:300,400');
+      
+$headings-font-family:Oswald;
+$enable-grid-classes:false;
+$primary: #CC7032;
+$secondary: #CC7032;
+$success: #CC7032;
+$danger: #CC7032;
+$info: #CC7032;
+$warning: #CC7032;
+$light: #CC7032;
+$dark: #CC7032;
+$enable-gradients:true;
+$spacer:1rem;
+$border-width:0;
+$btn-border-radius:.25rem;
+$enable-shadows:false;
+@import "bootstrap";
+  body {
       font-family: 15px Lato, sans-serif !important;
       line-height: 1.8;
       color: #F7D0A4;
@@ -9,7 +28,7 @@ h1 {
 h2 {
       font-family: Oswald, sans-serif;
       letter-spacing: 1px;
-      font-size: 30px;
+      font-size: 50px;
       text-transform: uppercase;
       text-align: center;
       color: #2C1710;
@@ -18,7 +37,7 @@ h2 {
   }
 h4 {
       font-family: Lato;
-      font-size: 19px;
+      font-size: 24px;
       line-height: 1.5;
       color: #2C1710;
       font-weight: 400;
@@ -27,6 +46,8 @@ h4 {
  
 p {
     font-family: Lato;
+    font-size: 16px;
+
         
       }
       .btn {
@@ -34,10 +55,12 @@ p {
         font-color: #F7D0A4 !important;
         text-transform: uppercase;
         letter-spacing: 2px;
+        margin: 10px 10px;
       }
   .btn-default {
     color: #F7D0A4;
     background-color: #2C1710;
+    font-size: 22px;
       }
       
 .btn-default:hover {
@@ -51,6 +74,7 @@ p {
       font-color: #2C1710 !important;
       border-color: #2C1710 !important;
       margin-top: 60px;
+      font-size: 22px;
       }
  .btn-lg:hover {
       background-color: #F7D0A4 !important;
@@ -62,6 +86,11 @@ p {
       color: 2C1710;
       padding: 100px 25px;
       font-family: copperlate, sans-serif;
+
+  }
+
+  .jumbotron p{
+    font-size: 26px;
   }
 .container-fluid {
       padding: 60px 50px;
@@ -149,13 +178,15 @@ p {
       letter-spacing: 4px;
       border-radius: 0;
       line-height: 5 !important;
+
   }
       
  .navbar li a, .navbar .navbar-brand {
       color: #F7D0A4 !important;
       font-family: Oswald;
-      font-size: 18px;
+      font-size: 20px;
       letter-spacing: 4px;
+     
       }
       
  .navbar-nav li a:hover, .navbar-nav li.active a {
@@ -188,6 +219,9 @@ p {
       color: #F7D0A4 !important;
   }
 
+.navbar-right {
+  margin-right: 22px;
+}
 
 footer .glyphicon {
       font-size: 20px;
